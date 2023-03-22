@@ -1,0 +1,11 @@
+module r4b (
+	input clk, 
+	input rst_b,
+	input ld,
+	input [3:0] d,
+	input sh,
+	input sh_in,
+	output [3:0] q
+);
+	//write Verilog code here
+endmodule

@@ -1,0 +1,6 @@
+if [file exists "work"] {vdel -all}
+vlib work
+if [catch "vlog seq3b.v"] return
+vsim -voptargs=+acc seq3b_tb
+run -all
+quit -sim

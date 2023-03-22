@@ -1,0 +1,41 @@
+module pat(
+input clk, rst_b,
+input i,
+output reg o
+);
+localparam S0_ST=3'd0;
+localparam S1_ST=3'd1;
+localparam S2_ST=3'd2;
+localparam S3_ST=3'd3;
+localparam S4_ST=3'd4;
+localparam S5_ST=3'd5;
+
+
+reg [2:0] st;
+reg [2:0] st_next;
+
+always @ (*) begin
+case(st)
+	S0_ST: if(i) st_next=S1_ST;
+		else st_next=S0_ST;
+	S1_ST: if(i) st_next=S2_ST;
+		else st_next=S0_ST;
+	S2_ST: if(i) st_next=S2_ST;
+		else st_next=S3_ST;
+	S3_ST: if(i) st_next=S4_ST;
+		else st_next=S0_ST;
+	S4_ST: if(i) st_next=S5_ST;
+		else st_next=S0_ST;
+	S5_ST: if(i) st_next=S2_ST;
+		else st_next=S3_ST;
+endcase
+always @(*) begin
+	o=1'd0;
+case(st)
+	S0_ST: o=0;
+	S1_ST: o=0;
+	S2_ST: o=0;
+	S3_ST: o=0;
+	S4_ST: o=0;
+	S5_ST: o=1;
+

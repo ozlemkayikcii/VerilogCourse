@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Facultate-an2_sem1/AC/ac_lab_ex
+vmux2s
+Z1 !s110 1603100426
+!i10b 1
+!s100 j>Soi?lg5SDL`835@`0io0
+IDm@he8FB90^IH3fHCI[ao0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1603100420
+Z4 8mux2s.v
+Z5 Fmux2s.v
+L0 1
+Z6 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z7 !s108 1603100426.000000
+Z8 !s107 mux2s.v|
+Z9 !s90 -reportprogress|300|mux2s.v|
+!s101 -O0
+!i113 1
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vmux2s_tb
+R1
+!i10b 1
+!s100 h6DGnB;kHC9CV``c>H]gY3
+I5<F[T7IC=ea<9ja2f4d_X1
+R2
+R0
+R3
+R4
+R5
+L0 15
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10

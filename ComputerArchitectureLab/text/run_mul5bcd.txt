@@ -1,0 +1,6 @@
+if [file exists "work"] {vdel -all}
+vlib work
+if [catch "vlog mul5bcd.v"] return
+vsim -voptargs=+acc mul5bcd_tb
+run -all
+quit -sim
